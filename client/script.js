@@ -86,10 +86,10 @@ const handleSubmit = async (e) => {
     // messageDiv.innerHTML = "..."
     loader(messageDiv)
 
-    const response = await fetch('https://codegpt-5d1h.onrender.com', {
+    const response = await fetch("https://codegpt-5d1h.onrender.com", {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json',
+            'Content-Type': "application/json",
         },
         body: JSON.stringify({
             prompt: data.get('prompt')
